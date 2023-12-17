@@ -1,0 +1,19 @@
+def Biggest(x):
+    i=0
+    biggestNumber = x[i]
+    for n in x:
+        if n > biggestNumber:
+            biggestNumber = n
+        i+=1
+        Length = len(x)
+        if i == Length:
+            break
+    print(biggestNumber)
+        
+    
+    
+
+    
+    
+x = list(input())
+Biggest(x)
