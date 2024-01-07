@@ -1,0 +1,8 @@
+#Generate Hello, Name!, or Hello, World! if nothing is inputed
+def hello(name="World"):
+    if name == "":
+        return("Hello, World!")
+    else:
+        name = name.capitalize()
+        return("Hello, " + name + "!")
+hello()
