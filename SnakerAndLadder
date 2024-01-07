@@ -1,0 +1,108 @@
+import random
+player1 = 1
+player2 = 1
+dice = list(range(1,7))
+
+i = 0
+while i >= 0:
+    a = input("click enter player1: ")
+    dice1 = random.choice(dice)
+    print("dice number: ", dice1)
+    player1 = player1 + dice1
+    if dice1 > 101-player1:
+        player1 = player1-dice1
+    print("player 1 position: ", player1)
+    if player1 == 100:
+        print("player 1 wins!")
+        break
+        
+    b = input("click enter player2: ")
+    dice2 = random.choice(dice)
+    print("dice number: ", dice2)
+    player2 = player2+dice2
+    if dice2 > 101-player2:
+        player2 = player2-dice2
+    print("player 2 position: ", player2)
+    if player2 == 100:
+        print("player2 wins")
+        
+
+    #ladders
+    
+    if player1 == 4:
+        player1 = 14
+
+    if player1 == 8:
+        player1 = 30
+
+    if player1 == 21:
+        player1 = 42
+
+    if player1 == 28:
+        player1 = 76
+
+    if player1 == 50:
+        player1 = 67
+
+    if player1 == 71:
+        player1 = 92
+
+
+
+    if player2 == 4:
+        player2 = 14
+
+    if player2 == 8:
+        player2 = 30
+
+    if player2 == 21:
+        player2 = 42
+
+    if player2 == 28:
+        player2 = 76
+
+    if player2 == 50:
+        player2 = 67
+
+    if player2 == 71:
+        player2 = 92
+
+    #Snakes
+
+    if player1 == 34:
+        player1 = 6
+
+    if player1 == 52:
+        player1 = 10
+
+    if player1 == 48:
+        player1 = 26
+
+    if player1 == 62:
+        player1 = 18
+
+    if player1 == 88:
+        player1 = 24
+
+    if player1 == 97:
+        player1 = 78
+
+
+
+    if player2 == 34:
+        player2 = 6
+
+    if player2 == 52:
+        player2 = 10
+
+    if player2 == 48:
+        player2 = 26
+
+    if player2 == 62:
+        player2 = 18
+
+    if player2 == 88:
+        player2 = 24
+
+    if player2 == 97:
+        player2 = 78
