@@ -1,0 +1,13 @@
+import random
+
+def choice(a):
+    b = ["scissors", "rock", "paper"]
+    c = random.choice(b)
+    if (a == b[0] and c == b[1]) or (a==b[2] and c==[1]):
+        print("You lose!")
+    elif (a == c):
+        print("draw")
+    else:
+        print("you win")
+a = input()
+choice(a)
